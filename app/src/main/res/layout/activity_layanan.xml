@@ -45,7 +45,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Cuci-Setrika"
+            android:text="Cuci Pakaian"
             android:textSize="16dp"
             android:layout_marginStart="35dp"
             android:layout_marginTop="100dp"/>
@@ -72,9 +72,9 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Only Setrika"
+            android:text="Setrika Pakaian"
             android:textSize="16dp"
-            android:layout_marginStart="35dp"
+            android:layout_marginStart="25dp"
             android:layout_marginTop="100dp"/>
     </androidx.cardview.widget.CardView>
 

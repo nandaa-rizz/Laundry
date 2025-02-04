@@ -108,10 +108,10 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Pegawai"
+            android:text="Pelanggan"
             android:textSize="16sp"
             android:layout_marginTop="128dp"
-            android:layout_marginStart="185dp"/>
+            android:layout_marginStart="180dp"/>
         <ImageView
             android:id="@+id/ivLaporan"
             android:layout_width="120dp"

@@ -128,30 +128,61 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tvTanggal"/>
 
+    <TextView
+        android:id="@+id/tvJenis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Jenis Kelamin"
+        android:textStyle="bold"
+        android:textSize="22dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="215dp"
+        app:layout_constraintTop_toBottomOf="@id/etTanggal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
     <RadioButton
         android:id="@+id/rb1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/etTanggal"
+        app:layout_constraintTop_toBottomOf="@id/tvJenis"
         app:layout_constraintStart_toStartOf="parent"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="20dp"/>
+        android:layout_marginStart="30dp" />
     <TextView
         android:id="@+id/tvLaki"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Laki-laki"
         app:layout_constraintStart_toEndOf="@id/rb1"
-        app:layout_constraintTop_toBottomOf="@id/etTanggal"
-        android:layout_marginTop="33dp"
-        android:textSize="16sp"/>
+        app:layout_constraintTop_toBottomOf="@id/tvJenis"
+        android:textSize="16sp"
+        android:layout_marginTop="13dp"/>
 
     <RadioButton
         android:id="@+id/rb2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/etTanggal"
+        app:layout_constraintTop_toBottomOf="@id/tvJenis"
         app:layout_constraintStart_toEndOf="@id/tvLaki"
-        android:layout_marginTop="20dp"
         android:layout_marginStart="30dp"/>
+    <TextView
+        android:id="@+id/tvPerempuan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Perempuan"
+        app:layout_constraintStart_toEndOf="@id/rb2"
+        app:layout_constraintTop_toBottomOf="@id/tvJenis"
+        android:layout_marginTop="13dp"
+        android:textSize="16sp"/>
+
+    <Button
+        android:id="@+id/btSimpan"
+        android:layout_width="350dp"
+        android:layout_height="55dp"
+        android:text="Simpan"
+        android:backgroundTint="#87805E"
+        app:layout_constraintTop_toBottomOf="@id/tvPerempuan"
+        android:layout_marginTop="40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="35dp"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

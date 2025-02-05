@@ -1,10 +1,11 @@
-package com.nanda.laundry
+package com.nanda.laundry.layanan
 
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import com.nanda.laundry.R
 
 class LayananActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

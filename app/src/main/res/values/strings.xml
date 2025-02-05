@@ -8,4 +8,7 @@
     <string name="hubungi">Hubungi</string>
     <string name="lihat">Lihat</string>
     <string name="cabang">Cabang</string>
+    <string name="tambah_pelanggan">Tambah Pelanggan</string>
+    <string name="nama_pelanggan">Nama Pelanggan</string>
+    <string name="nama_cabang">Nama Cabang</string>
 </resources>

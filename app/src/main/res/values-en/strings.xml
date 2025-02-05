@@ -9,4 +9,7 @@
     <string name="hubungi">Contact</string>
     <string name="lihat">Watch</string>
     <string name="cabang">Branch</string>
+    <string name="tambah_pelanggan">Add Customer</string>
+    <string name="nama_pelanggan">Customer Name</string>
+    <string name="nama_cabang">Branch Name</string>
 </resources>

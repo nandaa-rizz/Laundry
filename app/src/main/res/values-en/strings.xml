@@ -5,11 +5,17 @@
     <string name="nama">Staff Name</string>
     <string name="alamat">Address</string>
     <string name="terdaftar">Registered</string>
-    <string name="nomor">Number Phone</string>
+    <string name="nomor">Number Telephone</string>
     <string name="hubungi">Contact</string>
     <string name="lihat">Watch</string>
     <string name="cabang">Branch</string>
     <string name="tambah_pelanggan">Add Customer</string>
     <string name="nama_pelanggan">Customer Name</string>
     <string name="nama_cabang">Branch Name</string>
+    <string name="card_pelanggan">ID Customer</string>
+    <string name="tanggal">Birth Date</string>
+    <string name="gender">Gender</string>
+    <string name="Laki">Male</string>
+    <string name="Perempuan">Female</string>
+    <string name="simpan">Save</string>
 </resources>

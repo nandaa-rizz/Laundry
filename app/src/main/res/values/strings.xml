@@ -4,11 +4,17 @@
     <string name="nama">Nama Pegawai</string>
     <string name="alamat">Alamat</string>
     <string name="terdaftar">Terdaftar</string>
-    <string name="nomor">No HP</string>
+    <string name="nomor">Nomor Telephone</string>
     <string name="hubungi">Hubungi</string>
     <string name="lihat">Lihat</string>
     <string name="cabang">Cabang</string>
     <string name="tambah_pelanggan">Tambah Pelanggan</string>
     <string name="nama_pelanggan">Nama Pelanggan</string>
     <string name="nama_cabang">Nama Cabang</string>
+    <string name="card_pelanggan">ID Pelanggan</string>
+    <string name="tanggal">Tanggal Lahir</string>
+    <string name="gender">Jenis Kelamin</string>
+    <string name="Laki">Laki-Laki</string>
+    <string name="Perempuan">Perempuan</string>
+    <string name="simpan">Simpan</string>
 </resources>

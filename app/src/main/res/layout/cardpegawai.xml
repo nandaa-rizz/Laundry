@@ -8,7 +8,7 @@
         android:layout_width="380dp"
         android:layout_height="wrap_content"
         app:cardCornerRadius="8dp"
-        app:cardBackgroundColor="#F8F4E1"
+        app:cardBackgroundColor="#F3DEBA"
         android:layout_marginTop="30dp"
         android:layout_marginStart="10dp"
         android:padding="16dp"
@@ -28,7 +28,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/card_pegawai"
                 android:textColor="@color/black"
-                android:background="#B6C7AA"
+                android:background="#ABC4AA"
                 android:textSize="18sp"
                 android:textStyle="bold"
                 android:paddingStart="16dp"
@@ -77,6 +77,17 @@
                 android:textStyle="bold"
                 android:paddingStart="15dp"
                 android:paddingTop="5dp"/>
+
+            <TextView
+                android:id="@+id/tvCabang"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/cabang"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:paddingStart="15dp"
+                android:layout_marginTop="5dp"/>
         </LinearLayout>
 
         <Button
@@ -84,9 +95,9 @@
             android:layout_width="170dp"
             android:layout_height="50dp"
             android:text="@string/hubungi"
-            android:backgroundTint="#795757"
+            android:backgroundTint="#A9907E"
             android:layout_marginStart="10dp"
-            android:layout_marginTop="155dp"/>
+            android:layout_marginTop="185dp"/>
 
         <Button
             android:id="@+id/btLihat"
@@ -94,9 +105,9 @@
             android:layout_height="50dp"
             android:layout_weight="1"
             android:text="@string/lihat"
-            android:backgroundTint="#948979"
+            android:backgroundTint="#DFBB9D"
             android:layout_marginStart="200dp"
-            android:layout_marginTop="155dp"/>
+            android:layout_marginTop="185dp"/>
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/rvDataPelanggan"

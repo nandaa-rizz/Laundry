@@ -26,7 +26,7 @@
                 android:id="@+id/tvID"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="ID Pelanggan"
+                android:text="@string/card_pelanggan"
                 android:textColor="@color/black"
                 android:background="#B6C7AA"
                 android:textSize="18sp"
@@ -38,65 +38,65 @@
                 android:id="@+id/tvNama"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Nama"
+                android:text="@string/nama"
                 android:textSize="18sp"
                 android:textStyle="bold"
                 android:textColor="@color/black"
-                android:paddingStart="16dp"
-                android:paddingTop="10dp"/>
+                android:paddingStart="15dp"
+                android:paddingTop="5dp"/>
 
             <TextView
                 android:id="@+id/tvAlamat"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Alamat"
+                android:text="@string/alamat"
                 android:textSize="18sp"
                 android:textStyle="bold"
                 android:textColor="@color/black"
-                android:paddingStart="16dp"
-                android:paddingTop="10dp"/>
+                android:paddingStart="15dp"
+                android:paddingTop="5dp"/>
 
             <TextView
                 android:id="@+id/tvTerdaftar"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Terdaftar"
+                android:text="@string/terdaftar"
                 android:textColor="@color/black"
                 android:textSize="18sp"
                 android:textStyle="bold"
-                android:paddingStart="16dp"
-                android:paddingTop="10dp"/>
+                android:paddingStart="15dp"
+                android:paddingTop="5dp"/>
 
             <TextView
                 android:id="@+id/tvHP"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="No HP"
+                android:text="@string/nomor"
                 android:textColor="@color/black"
                 android:textSize="18sp"
                 android:textStyle="bold"
-                android:paddingStart="16dp"
-                android:paddingTop="10dp"/>
+                android:paddingStart="15dp"
+                android:paddingTop="5dp"/>
         </LinearLayout>
 
         <Button
             android:id="@+id/btHubungi"
             android:layout_width="170dp"
             android:layout_height="50dp"
-            android:text="Hubungi"
+            android:text="@string/hubungi"
             android:backgroundTint="#795757"
             android:layout_marginStart="10dp"
-            android:layout_marginTop="180dp"/>
+            android:layout_marginTop="155dp"/>
 
         <Button
             android:id="@+id/btLihat"
             android:layout_width="170dp"
             android:layout_height="50dp"
             android:layout_weight="1"
-            android:text="Lihat"
+            android:text="@string/lihat"
             android:backgroundTint="#948979"
             android:layout_marginStart="200dp"
-            android:layout_marginTop="180dp"/>
+            android:layout_marginTop="155dp"/>
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/rvDataPelanggan"

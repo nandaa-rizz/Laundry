@@ -17,4 +17,7 @@
     <string name="Laki">Laki-Laki</string>
     <string name="Perempuan">Perempuan</string>
     <string name="simpan">Simpan</string>
+    <string name="layanan">ID Layanan</string>
+    <string name="nama_layanan">Nama Layanan</string>
+    <string name="harga">Harga</string>
 </resources>

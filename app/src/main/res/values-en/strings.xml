@@ -18,4 +18,7 @@
     <string name="Laki">Male</string>
     <string name="Perempuan">Female</string>
     <string name="simpan">Save</string>
+    <string name="layanan">Service ID</string>
+    <string name="nama_layanan">Service Name</string>
+    <string name="harga">Price</string>
 </resources>

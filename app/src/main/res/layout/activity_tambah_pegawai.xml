@@ -85,7 +85,7 @@
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/etAlamat" />
+        app:layout_constraintTop_toBottomOf="@id/etAlamat"/>
 
     <EditText
         android:id="@+id/etHP"
@@ -99,16 +99,59 @@
         android:background="@drawable/edittext_border"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tvHP" />
+        app:layout_constraintTop_toBottomOf="@id/tvHP"/>
 
-    <Button
-        android:id="@+id/btSimpan"
+    <TextView
+        android:id="@+id/tvTanggal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="215dp"
+        android:text="Tanggal Lahir"
+        android:textSize="22dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etHP"/>
+
+    <EditText
+        android:id="@+id/etTanggal"
         android:layout_width="340dp"
         android:layout_height="50dp"
-        android:text="Simpan"
-        android:backgroundTint="#9F8383"
-        app:layout_constraintTop_toBottomOf="@+id/etHP"
-        android:layout_marginTop="30dp"
+        android:text="  Tanggal Lahir"
+        android:textColor="#BCCCDC"
+        android:textSize="18sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/edittext_border"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"/>
+        app:layout_constraintTop_toBottomOf="@id/tvTanggal"/>
+
+    <RadioButton
+        android:id="@+id/rb1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/etTanggal"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"/>
+    <TextView
+        android:id="@+id/tvLaki"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Laki-laki"
+        app:layout_constraintStart_toEndOf="@id/rb1"
+        app:layout_constraintTop_toBottomOf="@id/etTanggal"
+        android:layout_marginTop="33dp"
+        android:textSize="16sp"/>
+
+    <RadioButton
+        android:id="@+id/rb2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/etTanggal"
+        app:layout_constraintStart_toEndOf="@id/tvLaki"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="30dp"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

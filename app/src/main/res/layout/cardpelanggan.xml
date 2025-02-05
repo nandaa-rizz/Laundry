@@ -1,19 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".pelanggan.DataPelanggan">
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <androidx.cardview.widget.CardView
-        android:id="@+id/cvID"
         android:layout_width="380dp"
-        android:layout_height="210dp"
+        android:layout_height="wrap_content"
         app:cardCornerRadius="8dp"
-        app:cardBackgroundColor="#EDDFE0"
+        app:cardBackgroundColor="#F8F4E1"
         android:layout_marginTop="30dp"
+        android:layout_marginStart="10dp"
         android:padding="16dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -29,7 +26,9 @@
                 android:id="@+id/tvID"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="ID Pegawai"
+                android:text="ID Pelanggan"
+                android:textColor="@color/black"
+                android:background="#B6C7AA"
                 android:textSize="18sp"
                 android:textStyle="bold"
                 android:paddingStart="16dp"
@@ -40,8 +39,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Nama"
-                android:textSize="20sp"
+                android:textSize="18sp"
                 android:textStyle="bold"
+                android:textColor="@color/black"
                 android:paddingStart="16dp"
                 android:paddingTop="10dp"/>
 
@@ -50,7 +50,19 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Alamat"
-                android:textSize="20sp"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:paddingStart="16dp"
+                android:paddingTop="10dp"/>
+
+            <TextView
+                android:id="@+id/tvTerdaftar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Terdaftar"
+                android:textColor="@color/black"
+                android:textSize="18sp"
                 android:textStyle="bold"
                 android:paddingStart="16dp"
                 android:paddingTop="10dp"/>
@@ -60,7 +72,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="No HP"
-                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:textSize="18sp"
                 android:textStyle="bold"
                 android:paddingStart="16dp"
                 android:paddingTop="10dp"/>
@@ -71,9 +84,9 @@
             android:layout_width="170dp"
             android:layout_height="50dp"
             android:text="Hubungi"
-            android:backgroundTint="#A0937D"
+            android:backgroundTint="#795757"
             android:layout_marginStart="10dp"
-            android:layout_marginTop="150dp"/>
+            android:layout_marginTop="180dp"/>
 
         <Button
             android:id="@+id/btLihat"
@@ -81,11 +94,10 @@
             android:layout_height="50dp"
             android:layout_weight="1"
             android:text="Lihat"
-            android:backgroundTint="#BC9F8B"
+            android:backgroundTint="#948979"
             android:layout_marginStart="200dp"
-            android:layout_marginTop="150dp"/>
+            android:layout_marginTop="180dp"/>
 
-        <!-- RecyclerView untuk Menampilkan Data -->
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/rvDataPelanggan"
             android:layout_width="match_parent"
@@ -94,6 +106,5 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent" />
-    </androidx.cardview.widget.CardView>
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+</androidx.cardview.widget.CardView>

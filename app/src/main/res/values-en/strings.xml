@@ -21,4 +21,10 @@
     <string name="layanan">Service ID</string>
     <string name="nama_layanan">Service Name</string>
     <string name="harga">Price</string>
+    <string name="validasi_nama_pelanggan">Name</string>
+    <string name="validasi_alamat_pelanggan">Address</string>
+    <string name="validasi_nomor">Number</string>
+    <string name="validasi_cabang">Branch</string>
+    <string name="sukses_simpan_pelanggan">Kongrets</string>
+    <string name="gagal_simpan_pelanggan">Yahh</string>
 </resources>

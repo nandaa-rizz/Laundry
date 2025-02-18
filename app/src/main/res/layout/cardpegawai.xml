@@ -9,7 +9,7 @@
         android:layout_height="wrap_content"
         app:cardCornerRadius="8dp"
         app:cardBackgroundColor="#F3DEBA"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="5dp"
         android:layout_marginStart="10dp"
         android:padding="16dp"
         app:layout_constraintStart_toStartOf="parent"

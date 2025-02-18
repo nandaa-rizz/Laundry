@@ -20,4 +20,10 @@
     <string name="layanan">ID Layanan</string>
     <string name="nama_layanan">Nama Layanan</string>
     <string name="harga">Harga</string>
+    <string name="validasi_nama_pelanggan">validasi</string>
+    <string name="validasi_alamat_pelanggan">alamat</string>
+    <string name="validasi_nomor">nomor</string>
+    <string name="validasi_cabang">cabang</string>
+    <string name="sukses_simpan_pelanggan">berhasil</string>
+    <string name="gagal_simpan_pelanggan">gagal, ulangi</string>
 </resources>

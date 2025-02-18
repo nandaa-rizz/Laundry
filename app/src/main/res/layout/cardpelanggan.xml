@@ -5,11 +5,12 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <androidx.cardview.widget.CardView
+        android:id="@+id/cvCard"
         android:layout_width="380dp"
         android:layout_height="wrap_content"
         app:cardCornerRadius="8dp"
         app:cardBackgroundColor="#F8F4E1"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="5dp"
         android:layout_marginStart="15dp"
         android:padding="16dp"
         app:layout_constraintStart_toStartOf="parent"
@@ -38,7 +39,7 @@
                 android:id="@+id/tvNama"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/nama"
+                android:text="@string/nama_pelanggan"
                 android:textSize="18sp"
                 android:textStyle="bold"
                 android:textColor="@color/black"

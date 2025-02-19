@@ -26,4 +26,5 @@
     <string name="validasi_cabang">cabang</string>
     <string name="sukses_simpan_pelanggan">berhasil</string>
     <string name="gagal_simpan_pelanggan">gagal, ulangi</string>
+    <string name="tambah_layanan">layanan</string>
 </resources>

@@ -82,13 +82,13 @@
         <View
             android:layout_width="match_parent"
             android:layout_height="1dp"
-            android:layout_marginTop="55dp"
+            android:layout_marginTop="45dp"
             android:background="@color/black"/>
         <ImageView
             android:id="@+id/ivTransaksi"
             android:layout_width="120dp"
             android:layout_height="85dp"
-            android:layout_marginTop="55dp"
+            android:layout_marginTop="45dp"
             android:layout_marginStart="25dp"
             android:src="@drawable/tranksasi"/>
         <TextView
@@ -96,13 +96,13 @@
             android:layout_height="wrap_content"
             android:text="Transaksi"
             android:textSize="16sp"
-            android:layout_marginTop="128dp"
+            android:layout_marginTop="120dp"
             android:layout_marginStart="55dp"/>
         <ImageView
             android:id="@+id/ivPelanggan"
             android:layout_width="120dp"
             android:layout_height="70dp"
-            android:layout_marginTop="60dp"
+            android:layout_marginTop="50dp"
             android:layout_marginStart="155dp"
             android:src="@drawable/pelanggan"/>
         <TextView
@@ -110,13 +110,13 @@
             android:layout_height="wrap_content"
             android:text="Pelanggan"
             android:textSize="16sp"
-            android:layout_marginTop="128dp"
+            android:layout_marginTop="120dp"
             android:layout_marginStart="180dp"/>
         <ImageView
             android:id="@+id/ivLaporan"
             android:layout_width="120dp"
             android:layout_height="85dp"
-            android:layout_marginTop="55dp"
+            android:layout_marginTop="45dp"
             android:layout_marginStart="270dp"
             android:src="@drawable/laporan"/>
         <TextView
@@ -124,7 +124,7 @@
             android:layout_height="wrap_content"
             android:text="Laporan"
             android:textSize="16sp"
-            android:layout_marginTop="128dp"
+            android:layout_marginTop="120dp"
             android:layout_marginStart="300dp"/>
     </androidx.cardview.widget.CardView>
     <TextView

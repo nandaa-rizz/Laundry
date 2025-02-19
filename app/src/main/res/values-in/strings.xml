@@ -27,4 +27,5 @@
     <string name="validasi_cabang">Cabang tidak boleh kosong!</string>
     <string name="sukses_simpan_pelanggan">Selamat, data anda sudah disimpan!</string>
     <string name="gagal_simpan_pelanggan">Maaf, data anda tidak berhaasil disimpan. Silahkan ulangi lagi dalam beberapa menit kedepan. Terimakasih</string>
+    <string name="tambah_layanan">Tambah Layanan</string>
 </resources>

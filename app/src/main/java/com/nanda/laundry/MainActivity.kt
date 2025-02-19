@@ -10,13 +10,12 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.cardview.widget.CardView
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
-import com.nanda.laundry.cabang.CabangActivity
-import com.nanda.laundry.layanan.LayananActivity
+import com.nanda.laundry.layanan.DataLayanan
+import com.nanda.laundry.layanan.TambahLayanan
 import com.nanda.laundry.pegawai.DataPegawai
 import com.nanda.laundry.pegawai.TambahPegawai
 import com.nanda.laundry.pelanggan.DataPelanggan
 import com.nanda.laundry.pelanggan.TambahPelanggan
-import com.nanda.laundry.tambahan.TambahActivity
 import org.w3c.dom.Text
 
 class MainActivity : AppCompatActivity() {
@@ -34,7 +33,6 @@ class MainActivity : AppCompatActivity() {
         //inisialisasi
         ivPelanggan = findViewById(R.id.ivPelanggan)
         cvPegawai = findViewById(R.id.cvPegawai)
-        cvCabang = findViewById(R.id.cvCabang)
         cvLayanan = findViewById(R.id.cvLayanan)
         cvTambah = findViewById(R.id.cvTambahan)
 
@@ -46,16 +44,12 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this@MainActivity, DataPegawai:: class.java)
             startActivity(intent)
         }
-        cvCabang.setOnClickListener{
-            val intent = Intent(this, CabangActivity:: class.java)
-            startActivity(intent)
-        }
         cvLayanan.setOnClickListener{
-            val intent = Intent(this, LayananActivity:: class.java)
+            val intent = Intent(this, DataLayanan:: class.java)
             startActivity(intent)
         }
         cvTambah.setOnClickListener{
-            val intent = Intent(this, TambahActivity:: class.java)
+            val intent = Intent(this, TambahLayanan:: class.java)
             startActivity(intent)
         }
 

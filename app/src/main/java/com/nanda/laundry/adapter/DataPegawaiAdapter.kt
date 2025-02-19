@@ -26,6 +26,7 @@ class DataPegawaiAdapter(
         holder.tvNama.text = pegawai.namaPelanggan ?: ""
         holder.tvHP.text = pegawai.noHPPelanggan ?: ""
         holder.tvTerdaftar.text = pegawai.terdaftar ?: ""
+        holder.tvCabang.text = pegawai.etCabang
         holder.btHubungi.setOnClickListener{
 
         }
@@ -44,6 +45,7 @@ class DataPegawaiAdapter(
                 val tvID: TextView = itemView.findViewById(R.id.tvID)
                 val tvNama: TextView = itemView.findViewById(R.id.tvNama)
                 val tvHP: TextView = itemView.findViewById(R.id.tvHP)
+                val tvCabang: TextView = itemView.findViewById(R.id.tvCabang)
                 val tvTerdaftar: TextView = itemView.findViewById(R.id.tvTerdaftar)
                 val btHubungi: Button = itemView.findViewById(R.id.btHubungi)
                 val btLihat: Button = itemView.findViewById(R.id.btLihat)

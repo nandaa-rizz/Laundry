@@ -1,4 +1,4 @@
-package com.nanda.laundry.pegawai
+package com.nanda.laundry.layanan
 
 import android.os.Bundle
 import android.widget.Button
@@ -11,22 +11,21 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.google.firebase.database.FirebaseDatabase
 import com.nanda.laundry.R
+import com.nanda.laundry.modeldata.ModelLayanan
 import com.nanda.laundry.modeldata.ModelPegawai
-import com.nanda.laundry.modeldata.ModelPelanggan
 
-class TambahPegawai : AppCompatActivity() {
+class TambahLayanan : AppCompatActivity() {
     val database = FirebaseDatabase.getInstance()
-    val myRef = database.getReference("pegawai")
+    val myRef = database.getReference("layanan")
     lateinit var tvJudul: TextView
     lateinit var etNama: EditText
-    lateinit var etAlamat: EditText
-    lateinit var etHP: EditText
+    lateinit var etHarga: EditText
     lateinit var etCabang: EditText
     lateinit var btSimpan: Button
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContentView(R.layout.activity_tambah_pegawai)
+        setContentView(R.layout.activity_tambah_layanan)
         init()
         //getData()
         btSimpan.setOnClickListener {
@@ -42,49 +41,38 @@ class TambahPegawai : AppCompatActivity() {
     fun init() {
         tvJudul = findViewById(R.id.tvJudul)
         etNama = findViewById(R.id.etNama)
-        etAlamat = findViewById(R.id.etAlamat)
-        etHP = findViewById(R.id.etHP)
+        etHarga = findViewById(R.id.etHarga)
         etCabang = findViewById(R.id.etCabang)
         btSimpan = findViewById(R.id.btSimpan)
     }
 
     fun cekValidasi() {
         val nama = etNama.text.toString()
-        val alamat = etAlamat.text.toString()
-        val HP = etHP.text.toString()
+        val harga = etHarga.text.toString()
         val cabang = etCabang.text.toString()
         // validasi data
         if (nama.isEmpty()) {
             etNama.error = this.getString(R.string.validasi_nama_pelanggan)
             Toast.makeText(
-                this@TambahPegawai, getString(R.string.validasi_nama_pelanggan),
+                this@TambahLayanan, getString(R.string.validasi_nama_pelanggan),
                 Toast.LENGTH_SHORT
             ).show()
             etNama.requestFocus()
             return
         }
-        if (alamat.isEmpty()) {
-            etAlamat.error = this.getString(R.string.validasi_alamat_pelanggan)
+        if (harga.isEmpty()) {
+            etHarga.error = this.getString(R.string.validasi_alamat_pelanggan)
             Toast.makeText(
-                this@TambahPegawai, getString(R.string.validasi_alamat_pelanggan),
+                this@TambahLayanan, getString(R.string.validasi_alamat_pelanggan),
                 Toast.LENGTH_SHORT
             ).show()
-            etAlamat.requestFocus()
-            return
-        }
-        if (HP.isEmpty()) {
-            etHP.error = this.getString(R.string.validasi_nomor)
-            Toast.makeText(
-                this@TambahPegawai, getString(R.string.validasi_nomor),
-                Toast.LENGTH_SHORT
-            ).show()
-            etHP.requestFocus()
+            etHarga.requestFocus()
             return
         }
         if (cabang.isEmpty()) {
             etCabang.error = this.getString(R.string.validasi_cabang)
             Toast.makeText(
-                this@TambahPegawai, getString(R.string.validasi_cabang),
+                this@TambahLayanan, getString(R.string.validasi_cabang),
                 Toast.LENGTH_SHORT
             ).show()
             etCabang.requestFocus()
@@ -94,22 +82,21 @@ class TambahPegawai : AppCompatActivity() {
     }
 
     fun simpan() {
-        val pegawaiBaru = myRef.push()
-        val pegawaiId = pegawaiBaru.key
-        val data = ModelPegawai(
-            pegawaiId.toString(),
+        val layananBaru = myRef.push()
+        val layananID = layananBaru.key
+        val data = ModelLayanan(
+            layananID.toString(),
             etNama.text.toString(),
-            etAlamat.text.toString(),
-            etHP.text.toString(),
-            etCabang.text.toString(),
-            "timestamp"
+            etHarga.text.toString(),
+            etCabang.text.toString()
+            //"timestamp"
         )
-        pegawaiBaru.setValue(data).addOnSuccessListener {
-            Toast.makeText(this@TambahPegawai, getString(R.string.sukses_simpan_pelanggan), Toast.LENGTH_SHORT).show()
+        layananBaru.setValue(data).addOnSuccessListener {
+            Toast.makeText(this@TambahLayanan, getString(R.string.sukses_simpan_pelanggan), Toast.LENGTH_SHORT).show()
             finish()
         }
             .addOnFailureListener {
-                Toast.makeText(this@TambahPegawai, getString(R.string.gagal_simpan_pelanggan), Toast.LENGTH_SHORT).show()
+                Toast.makeText(this@TambahLayanan, getString(R.string.gagal_simpan_pelanggan), Toast.LENGTH_SHORT).show()
             }
     }
 }

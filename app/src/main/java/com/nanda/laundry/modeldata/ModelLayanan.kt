@@ -5,5 +5,5 @@ class ModelLayanan (
     val tvNama: String? = null,
     val tvHarga: String? = null,
     val etCabang: String? = null,
-    val terdaftar: String? = null
+    val terdaftar: String? = null,
 )

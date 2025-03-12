@@ -60,7 +60,7 @@ class DataLayanan : AppCompatActivity() {
                     layananList.clear()
                     for (dataSnapshot in snapshot.children) {
                         val layanan = dataSnapshot.getValue(ModelLayanan::class.java)
-                        layanan?.let { layananList.add(it) }
+                        layanan?.let {layananList.add(it)}
                     }
                     val adapter = TambahLayananAdapter(layananList)
                     rv_data_layanan.adapter = adapter

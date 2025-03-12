@@ -61,9 +61,9 @@ class TambahLayanan : AppCompatActivity() {
             return
         }
         if (harga.isEmpty()) {
-            etHarga.error = this.getString(R.string.validasi_alamat_pelanggan)
+            etHarga.error = this.getString(R.string.validasi_harga)
             Toast.makeText(
-                this@TambahLayanan, getString(R.string.validasi_alamat_pelanggan),
+                this@TambahLayanan, getString(R.string.validasi_harga),
                 Toast.LENGTH_SHORT
             ).show()
             etHarga.requestFocus()

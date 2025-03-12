@@ -18,6 +18,7 @@ class TambahLayananAdapter(
         val view = LayoutInflater.from(parent.context).inflate(R.layout.cardlayanan, parent, false)
         return ViewHolder(view)
     }
+    
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val layanan = listLayanan[position]

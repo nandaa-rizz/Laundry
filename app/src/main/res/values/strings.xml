@@ -27,4 +27,11 @@
     <string name="sukses_simpan_pelanggan">berhasil</string>
     <string name="gagal_simpan_pelanggan">gagal, ulangi</string>
     <string name="tambah_layanan">layanan</string>
+    <string name="tambah_cabang">cabang</string>
+    <string name="alamat_mana">alamatlengkap</string>
+    <string name="card_cabang">cabang lagi</string>
+    <string name="validasi_harga">harga</string>
+    <string name="validasi_layanan">layanan</string>
+    <string name="sukses_simpan_cabang">cabang</string>
+    <string name="gagal_simpan_cabang">cabang</string>
 </resources>

@@ -10,21 +10,19 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.cardview.widget.CardView
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import com.nanda.laundry.cabang.DataCabang
 import com.nanda.laundry.layanan.DataLayanan
 import com.nanda.laundry.layanan.TambahLayanan
 import com.nanda.laundry.pegawai.DataPegawai
-import com.nanda.laundry.pegawai.TambahPegawai
 import com.nanda.laundry.pelanggan.DataPelanggan
-import com.nanda.laundry.pelanggan.TambahPelanggan
-import org.w3c.dom.Text
 
 class MainActivity : AppCompatActivity() {
     // langkah 1 = deklarasi
     lateinit var ivPelanggan: ImageView
     lateinit var cvPegawai: CardView
-    lateinit var cvCabang: CardView
     lateinit var cvLayanan: CardView
     lateinit var cvTambah: CardView
+    lateinit var cvCabang: CardView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -35,6 +33,7 @@ class MainActivity : AppCompatActivity() {
         cvPegawai = findViewById(R.id.cvPegawai)
         cvLayanan = findViewById(R.id.cvLayanan)
         cvTambah = findViewById(R.id.cvTambahan)
+        cvCabang = findViewById(R.id.cvCabang)
 
         ivPelanggan.setOnClickListener {
             val intent = Intent(this@MainActivity, DataPelanggan:: class.java)
@@ -50,6 +49,10 @@ class MainActivity : AppCompatActivity() {
         }
         cvTambah.setOnClickListener{
             val intent = Intent(this, TambahLayanan:: class.java)
+            startActivity(intent)
+        }
+        cvCabang.setOnClickListener{
+            val intent = Intent(this, DataCabang:: class.java)
             startActivity(intent)
         }
 

@@ -28,4 +28,11 @@
     <string name="sukses_simpan_pelanggan">Selamat, data anda sudah disimpan!</string>
     <string name="gagal_simpan_pelanggan">Maaf, data anda tidak berhaasil disimpan. Silahkan ulangi lagi dalam beberapa menit kedepan. Terimakasih</string>
     <string name="tambah_layanan">Tambah Layanan</string>
+    <string name="tambah_cabang">Tambah Cabang</string>
+    <string name="alamat_mana">Masukkan Alamat</string>
+    <string name="card_cabang">ID Cabang</string>
+    <string name="validasi_harga">Harus ada harga yang dimasukan</string>
+    <string name="validasi_layanan">Harus menambahkan jenis layanan untuk pelanggan</string>
+    <string name="sukses_simpan_cabang">Data cabang baru berhasil disimpan^^</string>
+    <string name="gagal_simpan_cabang">Data cabang baru gagal disimpan, coba lagi dalam beberapa saat!</string>
 </resources>

@@ -21,12 +21,12 @@ class DataPegawaiAdapter(
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val pegawai = listPegawai[position]
-        holder.tvAlamat.text = pegawai.alamatPelanggan ?: ""
-        holder.tvID.text = pegawai.idPelanggan ?: ""
-        holder.tvNama.text = pegawai.namaPelanggan ?: ""
-        holder.tvHP.text = pegawai.noHPPelanggan ?: ""
+        holder.tvAlamat.text = pegawai.alamatPegawai ?: ""
+        holder.tvID.text = pegawai.idPegawai ?: ""
+        holder.tvNama.text = pegawai.namaPegawai ?: ""
+        holder.tvHP.text = pegawai.noHPPegawai ?: ""
         holder.tvTerdaftar.text = pegawai.terdaftar ?: ""
-        holder.tvCabang.text = pegawai.etCabang
+        holder.tvCabang.text = pegawai.etCabang ?: ""
         holder.btHubungi.setOnClickListener{
 
         }

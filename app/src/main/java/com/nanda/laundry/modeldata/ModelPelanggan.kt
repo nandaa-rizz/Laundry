@@ -6,5 +6,5 @@ class ModelPelanggan (
     val alamatPelanggan: String? = null,
     val noHPPelanggan: String? = null,
     val etCabang: String? = null,
-    val terdaftar: String? = null
+    val terdaftar: String? = null,
 )

@@ -28,4 +28,11 @@
     <string name="sukses_simpan_pelanggan">Kongrets</string>
     <string name="gagal_simpan_pelanggan">Yahh</string>
     <string name="tambah_layanan">yesyes</string>
+    <string name="tambah_cabang">Add Branch</string>
+    <string name="alamat_mana">-</string>
+    <string name="card_cabang">ya</string>
+    <string name="validasi_harga">money</string>
+    <string name="validasi_layanan">service</string>
+    <string name="sukses_simpan_cabang">congrats</string>
+    <string name="gagal_simpan_cabang">yahhh</string>
 </resources>

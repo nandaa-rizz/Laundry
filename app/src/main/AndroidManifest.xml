@@ -21,6 +21,11 @@
             android:name=".layanan.DataLayanan"
             android:exported="false" />
         <activity
+            android:name=".cabang.DataCabang"
+            android:exported="false" />
+        <activity android:name=".cabang.TambahCabang"
+            android:exported="false"/>
+        <activity
             android:name=".pegawai.TambahPegawai"
             android:exported="false" />
         <activity

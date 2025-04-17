@@ -32,7 +32,7 @@
         android:id="@+id/tvTanggal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="08 Januari 2025"
+        android:text="12 Maret 2025"
         android:textSize="20sp"
         android:textColor="@color/black"
         app:layout_constraintTop_toBottomOf="@id/tvJudul"

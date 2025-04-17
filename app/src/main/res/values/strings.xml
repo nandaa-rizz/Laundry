@@ -34,4 +34,8 @@
     <string name="validasi_layanan">layanan</string>
     <string name="sukses_simpan_cabang">cabang</string>
     <string name="gagal_simpan_cabang">cabang</string>
+    <string name="tambahpegawai">tambahpegawai</string>
+    <string name="tvJudulTambahPegawai">Tambah Pegawai</string>
+    <string name="Data_Pegawai_Berhasi_Diperbaharui">Data Pegawai Berhasi Diperbaharui</string>
+    <string name="Data_Pegawai_Gagal_Diperbaharui">Data Pegawai Gagal Diperbaharui</string>
 </resources>

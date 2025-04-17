@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "298569082592",
+    "project_id": "laundryappnanda",
+    "storage_bucket": "laundryappnanda.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:298569082592:android:53c211624038cd2fcf1285",
+        "android_client_info": {
+          "package_name": "com.nanda.laundry"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDrIJsrBnY2-mPoE5W9yXaUJ3VdQVpm6zA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

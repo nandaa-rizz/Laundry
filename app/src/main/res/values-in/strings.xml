@@ -35,4 +35,8 @@
     <string name="validasi_layanan">Harus menambahkan jenis layanan untuk pelanggan</string>
     <string name="sukses_simpan_cabang">Data cabang baru berhasil disimpan^^</string>
     <string name="gagal_simpan_cabang">Data cabang baru gagal disimpan, coba lagi dalam beberapa saat!</string>
+    <string name="tambahpegawai">TAMBAH PEGAWAI</string>
+    <string name="tvJudulTambahPegawai">Tambah Pegawai</string>
+    <string name="Data_Pegawai_Berhasi_Diperbaharui">Data Pegawai Berhasi Diperbaharui</string>
+    <string name="Data_Pegawai_Gagal_Diperbaharui">Data Pegawai Gagal Diperbaharui</string>
 </resources>

@@ -17,8 +17,6 @@ import com.google.firebase.database.ValueEventListener
 import com.nanda.laundry.R
 import com.nanda.laundry.adapter.DataPegawaiAdapter
 import com.nanda.laundry.modeldata.ModelPegawai
-import com.nanda.laundry.modeldata.ModelPelanggan
-import com.nanda.laundry.pegawai.TambahPegawai
 
 class DataPegawai : AppCompatActivity() {
     val database = FirebaseDatabase.getInstance()
@@ -39,20 +37,30 @@ class DataPegawai : AppCompatActivity() {
         pegawaiList = arrayListOf<ModelPegawai>()
         getData()
 
+        val btTambah : FloatingActionButton = findViewById(R.id.btTambah)
+        btTambah.setOnClickListener{
+            val intent = Intent(this, TambahPegawai::class.java)
+            intent.putExtra("judul", (this.getString(R.string.tambahpegawai)))
+            intent.putExtra("idPegawai", "")
+            intent.putExtra("namaPegawai", "")
+            intent.putExtra("noHPPegawai", "")
+            intent.putExtra("alamatPegawai", "")
+            intent.putExtra("etcabang", "")
+            startActivity(intent)
+        }
+
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+
+
     }
 
     fun init() {
         rv_data_pegawai = findViewById(R.id.rv_data_pegawai)
         btTambah = findViewById(R.id.btTambah)
-        btTambah.setOnClickListener{
-            val intent = Intent(this, TambahPegawai:: class.java)
-            startActivity(intent)
-        }
     }
 
     fun getData(){
@@ -63,7 +71,7 @@ class DataPegawai : AppCompatActivity() {
                     pegawaiList.clear()
                     for (dataSnapshot in snapshot.children){
                         val pegawai = dataSnapshot.getValue(ModelPegawai:: class.java)
-                        pegawai?.let {pegawaiList.add(it)}
+                        pegawaiList.add(pegawai!!)
                     }
                     val adapter = DataPegawaiAdapter(pegawaiList)
                     rv_data_pegawai.adapter = adapter

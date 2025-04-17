@@ -35,4 +35,8 @@
     <string name="validasi_layanan">service</string>
     <string name="sukses_simpan_cabang">congrats</string>
     <string name="gagal_simpan_cabang">yahhh</string>
+    <string name="tambahpegawai">yyyy</string>
+    <string name="tvJudulTambahPegawai">Tambah Pegawai</string>
+    <string name="Data_Pegawai_Berhasi_Diperbaharui">Data Pegawai Berhasi Diperbaharui</string>
+    <string name="Data_Pegawai_Gagal_Diperbaharui">Data Pegawai Gagal Diperbaharui</string>
 </resources>
